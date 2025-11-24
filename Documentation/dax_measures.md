@@ -1,3 +1,4 @@
+```DAX
 -1.DAX measures for KPI's on dashboard1
 Total Orders = 
 COUNTROWS('nhs_pharma_clean')
