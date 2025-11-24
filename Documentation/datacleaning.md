@@ -26,7 +26,7 @@ DELETE
 FROM nhs_pharma2
 WHERE row_num>1;
 
--2.Standardize the data by checking through the key columns to correct and update uneven data , for example
+-2.Standardize the data by checking through the key columns to correct and update uneven data and changing the date datatype into the standard date, for example
 SELECT transaction_id,supplier_name
 FROM nhs_pharma2
 WHERE supplier_name LIKE 'Gl%'; 
@@ -57,7 +57,48 @@ SET product_name = CASE
     ELSE product_name
 END;
 
+SELECT 
+  `order_date` AS original_date,
+  CASE
+    WHEN `order_date` LIKE '____.__.__' THEN STR_TO_DATE(`order_date`, '%Y.%m.%d')
+    WHEN `order_date` LIKE '__-___-____' THEN STR_TO_DATE(`order_date`, '%d-%b-%Y')
+    WHEN `order_date` LIKE '__/__/____' THEN STR_TO_DATE(`order_date`, '%d/%m/%Y')
+    WHEN `order_date` LIKE '____/__/__' THEN STR_TO_DATE(`order_date`, '%Y/%m/%d')
+    WHEN `order_date` LIKE '____-__-__' THEN STR_TO_DATE(`order_date`, '%Y-%m-%d')
+     ELSE CAST(TRIM(`order_date`) AS CHAR)
+  END AS standardized_date
+FROM nhs_pharma2;
 
+UPDATE nhs_pharma2
+SET `order_date`= CASE
+					WHEN `order_date` LIKE '____.__.__' THEN STR_TO_DATE(`order_date`, '%Y.%m.%d')
+					WHEN `order_date` LIKE '__-___-____' THEN STR_TO_DATE(`order_date`, '%d-%b-%Y')
+					WHEN `order_date` LIKE '__/__/____' THEN STR_TO_DATE(`order_date`, '%d/%m/%Y')
+					WHEN `order_date` LIKE '____/__/__' THEN STR_TO_DATE(`order_date`, '%Y/%m/%d')
+					WHEN `order_date` LIKE '____-__-__' THEN STR_TO_DATE(`order_date`, '%Y-%m-%d')
+						ELSE NULL
+					END ;
 
+SELECT `order_date`
+FROM nhs_pharma2
+LiMIT 20;
+
+-3. Remove null or blank values from key columns
+SELECT *
+FROM nhs_pharma2
+WHERE transaction_id IS NULL
+OR transaction_id=''
+ORDER BY 1;
+
+UPDATE nhs_pharma2
+SET `transaction_id`=''
+WHERE transaction_id IS NULL;
+
+DELETE FROM nhs_pharma2
+WHERE transaction_id IS NULL;
+
+-4.Remove any redunctant columns
+ALTER TABLE nhs_pharma2
+DROP COLUMN row_num; 
 
 
