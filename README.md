@@ -11,8 +11,8 @@ It analyses **order fulfilment, delivery reliability, storage compliance, cost i
 The report consists of **four dashboards**:
 
 1. **Order Fulfilment & Delivery Efficiency Overview**  
-2. **Delayed Delivery Cost Impact & Supplier Breakdown**  
-3. **Wastage Cost & Storage Compliance Analysis**  
+2. **Delivery Performance & Cost Imapact Analysis**  
+3. **Medicine Storage Efficiency & Cost Imapact Analysis**  
 4. **Summary & Strategic Recommendations**
 
 This project demonstrates capabilities in **ETL, data cleaning, modelling, KPI development, root-cause analysis, procurement insight generation, and professional BI report design**.
@@ -52,34 +52,6 @@ This dashboard was built to support:
 
 ---
 
-## 🗂️ **Folder Structure**
-
-/NHS-SupplyChain-Logistics-Dashboard
-│
-├── README.md
-│
-├── Data/
-│ ├── raw/ → uncleaned CSV files
-│ ├── cleaned/ → post-Power Query cleaned files
-│
-├── PowerBI/
-│ ├── NHS_SupplyChain.pbix
-│
-├── Documentation/
-│ ├── data_dictionary.md
-│ ├── transformation_steps.md
-│ ├── dax_measures.md
-│
-└── Screenshots/
-├── dashboard1.png
-├── dashboard2.png
-├── dashboard3.png
-├── dashboard4.png
-
-Upload your files into these folders when building your GitHub repo.
-
----
-
 ## 📥 **Dataset & ETL Overview**
 
 ### **Data Sources**
@@ -92,38 +64,54 @@ Upload your files into these folders when building your GitHub repo.
    - Imported CSV files into Power BI using Power Query  
    - Validated raw data in SQL (NULL checks, duplicates, datatypes)
 
-2. **Transformation (Power Query)**  
-   - Removed duplicates  
-   - Standardised date formats  
-   - Fixed inconsistent supplier names  
-   - Created calculated columns (delivery status, storage accuracy)  
-   - Handled missing or invalid values  
-   - Ensured correct data types
+2. **Transformation (SQL,Powerbi)**  
+   - Removed duplicates  (SQL)
+   - Standardised date formats  (SQL)
+   - Fixed inconsistent supplier names  (SQL)
+    - Handled missing or invalid values (SQL)
+   - Ensured correct data types (SQL)
+   - Created calculated columns (delivery status, storage accuracy)  (Powerbi)
+   
 
 3. **Loading**  
    - Loaded the transformed tables into Power BI Model  
    - Built relationships and star-schema style modelling  
 
-This satisfies ETL/ELT requirements expected in professional analytics roles.
 
 ---
-
 ## 🛠️ **Data Cleaning & Transformation (Details)**
 
-See `/Documentation/transformation_steps.md` for full steps, but summary:
-
-### **Power Query Tasks**
-- Trim & clean supplier names  
-- Split delivery timestamp into date & time  
-- Create flags:
-  - On-Time / Late  
-  - Correct / Incorrect Storage  
-- Remove unused columns  
-- Merge lookup tables  
-- Create parameterised queries for reusability  
-
-### **SQL Checks Used**
+### **Data Cleaning SQL Checks Used**
 ```sql
+-Created a staging table not to work directly on the original datasets
+ CREATE TABLE nhs_pharma
+LIKE nhs_pharma_messy;
+
+INSERT nhs_pharma 
+SELECT *
+FROM nhs_pharma_messy;
+```sql
+- 1.Remove duplicates by assigning row numbers to identify duplicate rows
+SELECT *,
+row_number()over(Partition by transaction_id,product_code,order_date) as row_num
+FROM nhs_pharma;
+
+WITH duplicate_cte AS
+(SELECT *,
+row_number()over(Partition by transaction_id,product_code,order_date) as row_num
+FROM nhs_pharma
+)
+SELECT *
+FROM duplicate_cte
+WHERE row_num >1 ;
+
+DELETE
+FROM nhs_pharma2
+WHERE row_num>1;
+
+-2.Standardize the data
+
+
 SELECT supplier_name, COUNT(*) 
 FROM orders
 GROUP BY supplier_name;
@@ -131,63 +119,20 @@ GROUP BY supplier_name;
 SELECT *
 FROM orders
 WHERE delivery_date IS NULL;
-## 📥 **Dataset & ETL Overview**
-
-### **Data Sources**
-- CSV extracts from NHS pharma order systems  
-- Excel files for additional cleaning  
-- SQL used for exploratory analysis and validation  
-
-### **ETL Process (End-to-End)**  
-1. **Extraction**  
-   - Imported CSV files into Power BI using Power Query  
-   - Validated raw data in SQL (NULL checks, duplicates, datatypes)
-
-2. **Transformation (Power Query)**  
-   - Removed duplicates  
-   - Standardised date formats  
-   - Fixed inconsistent supplier names  
-   - Created calculated columns (delivery status, storage accuracy)  
-   - Handled missing or invalid values  
-   - Ensured correct data types
-
-3. **Loading**  
-   - Loaded the transformed tables into Power BI Model  
-   - Built relationships and star-schema style modelling  
-
-This satisfies ETL/ELT requirements expected in professional analytics roles.
-
----
-
-## 🛠️ **Data Cleaning & Transformation (Details)**
-
-See `/Documentation/transformation_steps.md` for full steps, but summary:
-
-### **Power Query Tasks**
-- Trim & clean supplier names  
-- Split delivery timestamp into date & time  
-- Create flags:
-  - On-Time / Late  
-  - Correct / Incorrect Storage  
-- Remove unused columns  
-- Merge lookup tables  
-- Create parameterised queries for reusability  
-
-### **SQL Checks Used**
-```sql
-SELECT supplier_name, COUNT(*) 
-FROM orders
-GROUP BY supplier_name;
-
-SELECT *
-FROM orders
-WHERE delivery_date IS NULL;
-Excel Checks
-VLOOKUP validation
-
 Pivot exploration
 
 Missing value comparisons
+### **Power Query Tasks**
+- Trim & clean supplier names  
+- Split delivery timestamp into date & time  
+- Create flags:
+  - On-Time / Late  
+  - Correct / Incorrect Storage  
+- Remove unused columns  
+- Merge lookup tables  
+- Create parameterised queries for reusability  
+
+
 
 📐 DAX Measures Used
 See full list in /Documentation/dax_measures.md.
