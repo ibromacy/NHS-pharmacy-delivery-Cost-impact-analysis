@@ -195,7 +195,6 @@ See full list in /Documentation/dax_measures.md.
 Key measures include:
 
 DAX
-Copy code
 Fulfilment Rate = DIVIDE([Completed Orders], [Total Orders])
 
 On Time Delivery % = DIVIDE([On Time Orders], [Total Orders])
@@ -207,3 +206,16 @@ Incorrect Storage % = DIVIDE([Incorrect Storage], [Total Orders])
 Total Delay Cost = SUM(Orders[Delayed_Cost])
 
 Total Waste Cost = SUM(Orders[Wastage_Cost])
+
+## 📊 Dashboard 1 – Fulfilment Overview
+![Dashboard 1]("C:\Users\Ibrahim\Pictures\Screenshots\nhs_overview.png")
+
+## 📊 Dashboard 2 – Delayed Delivery Cost Impact
+![Dashboard 2](Screenshots/dashboard2.png)
+
+## 📊 Dashboard 3 – Storage Compliance & Wastage Cost
+![Dashboard 3](Screenshots/dashboard3.png)
+
+## 📊 Dashboard 4 – Summary & Recommendations
+![Dashboard 4](Screenshots/dashboard4.png)
+
