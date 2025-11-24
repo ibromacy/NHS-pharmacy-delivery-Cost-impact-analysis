@@ -90,7 +90,7 @@ LIKE nhs_pharma_messy;
 INSERT nhs_pharma 
 SELECT *
 FROM nhs_pharma_messy;
-```sql
+
 - 1.Remove duplicates by assigning row numbers to identify duplicate rows
 SELECT *,
 row_number()over(Partition by transaction_id,product_code,order_date) as row_num
