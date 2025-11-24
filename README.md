@@ -211,7 +211,7 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 ![Dashboard 1](Screenshot_dashboard1.png)
 
 ## 📊 Dashboard 2 – Delayed Delivery Cost Impact
-![Dashboard 2](Screenshot_dashboard2.png)
+![Dashboard 2](Screenshot_dashbaord2.png)
 
 ## 📊 Dashboard 3 – Storage Compliance & Wastage Cost
 ![Dashboard 3](Screenshot_dashboard3.png)
