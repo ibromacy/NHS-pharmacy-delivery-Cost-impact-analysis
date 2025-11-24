@@ -81,6 +81,29 @@ This dashboard was built to support:
 ---
 ## 🛠️ **Data Cleaning & Transformation (Details)**
 
+See `/Documentation/transformation_steps.md` for full steps, but summary:
+
+
+
+### **Power Query Tasks**
+- Split delivery timestamp into date & time  
+- Create flags:
+  - On-Time / Late  
+  - Correct / Incorrect Storage  
+- Remove unused columns  
+- Merge lookup tables  
+- Create parameterised queries for reusability  
+
+### **SQL Checks Used**
+```sql
+SELECT supplier_name, COUNT(*) 
+FROM orders
+GROUP BY supplier_name;
+
+SELECT *
+FROM orders
+WHERE delivery_date IS NULL;
+
 ### **Data Cleaning SQL Checks Used**
 ```sql
 -Created a staging table not to work directly on the original datasets
