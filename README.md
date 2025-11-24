@@ -79,23 +79,53 @@ This dashboard was built to support:
 
 
 ---
+
+Upload your files into these folders when building your GitHub repo.
+
+---
+
+## 📥 **Dataset & ETL Overview**
+
+### **Data Sources**
+- CSV extracts from NHS pharma order systems  
+- Excel files for additional cleaning  
+- SQL used for exploratory analysis and validation  
+
+### **ETL Process (End-to-End)**  
+1. **Extraction**  
+   - Imported CSV files into Power BI using Power Query  
+   - Validated raw data in SQL (NULL checks, duplicates, datatypes)
+
+2. **Transformation (Power Query)**  
+   - Removed duplicates  
+   - Standardised date formats  
+   - Fixed inconsistent supplier names  
+   - Created calculated columns (delivery status, storage accuracy)  
+   - Handled missing or invalid values  
+   - Ensured correct data types
+
+3. **Loading**  
+   - Loaded the transformed tables into Power BI Model  
+   - Built relationships and star-schema style modelling  
+
+This satisfies ETL/ELT requirements expected in professional analytics roles.
+
+---
+
 ## 🛠️ **Data Cleaning & Transformation (Details)**
+
+See `/Documentation/data_transformation.md` and `/Documentation/data_cleaning.md` for full steps, but summary:
+
 ### **Power Query Tasks**
 - Trim & clean supplier names  
 - Split delivery timestamp into date & time  
-- Create flags:
+- Create Flags like additional columns of storage_temp like ambient&room_temp into ambient ,cold_chain & refrigerated into refrigerated
   - On-Time / Late  
-  - Correct / Incorrect Storage  
+  - Created calculated column and set Set storage _temp into the ideal_storage and storage_match for  Correct / Incorrect Storage  
 - Remove unused columns  
 - Merge lookup tables  
-- Create parameterised queries for reusability
-- 
-### **SQL Checks Used**
-```sql
-SELECT supplier_name, COUNT(*) 
-FROM orders
-GROUP BY supplier_name;
-See `/Documentation/data_cleaning.md` for full steps, but summary:
+- Create parameterised queries for reusability  
+
 ### **SQL Checks Used**
 ```sql
 SELECT supplier_name, COUNT(*) 
@@ -106,20 +136,13 @@ SELECT *
 FROM orders
 WHERE delivery_date IS NULL;
 
+Excel Checks
 
-SELECT supplier_name, COUNT(*) 
-FROM orders
-GROUP BY supplier_name;
+VLOOKUP validation
 
-SELECT *
-FROM orders
-WHERE delivery_date IS NULL;
-
-Pivot Exploration
+Pivot exploration
 
 Missing value comparisons
-
-
 
 
 📐 DAX Measures Used
