@@ -145,7 +145,7 @@ Pivot exploration
 
 Missing value comparisons
 
-### 📐** DAX Measures Used**
+### 📐**DAX Measures Used**
 
 See full list in /Documentation/dax_measures.md.
 
