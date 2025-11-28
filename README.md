@@ -79,7 +79,7 @@ This dashboard was built to support:
 
 ## 🛠️ **Data Cleaning & Transformation (Details)**
 
-See [Data Cleaning Documentation](Documentation/data_cleaning.md) and [Data Cleaning Documentation](Documentation/data_transformation.md)
+See [Data Cleaning Documentation](Documentation/data_cleaning.md) and [Data Transformation Documentation](Documentation/data_transformation.md)
 
 
  for full steps, but summary:
