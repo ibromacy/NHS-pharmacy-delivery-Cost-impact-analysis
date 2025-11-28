@@ -116,6 +116,14 @@ This satisfies ETL/ELT requirements expected in professional analytics roles.
 ## 🛠️ **Data Cleaning & Transformation (Details)**
 
 See `/Documentation/data_transformation.md` and `/Documentation/data_cleaning.md` for full steps, but summary:
+### **SQL Checks Used**
+SELECT supplier_name, COUNT(*) 
+FROM orders
+GROUP BY supplier_name;
+
+SELECT *
+FROM orders
+WHERE delivery_date IS NULL;
 
 ### **Power Query Tasks**
 - Trim & clean supplier names  
@@ -127,14 +135,7 @@ See `/Documentation/data_transformation.md` and `/Documentation/data_cleaning.md
 - Merge lookup tables  
 - Create parameterised queries for reusability  
 
-### **SQL Checks Used**
-SELECT supplier_name, COUNT(*) 
-FROM orders
-GROUP BY supplier_name;
 
-SELECT *
-FROM orders
-WHERE delivery_date IS NULL;
 
 Excel Checks
 
@@ -144,7 +145,8 @@ Pivot exploration
 
 Missing value comparisons
 
-📐 DAX Measures Used
+### 📐** DAX Measures Used**
+
 See full list in /Documentation/dax_measures.md.
 
 Key measures include:
@@ -165,7 +167,7 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 
 📊 Dashboard Walkthrough
 ## 📊 Dashboard 1 – Fulfilment Overview
-![dashaboard1](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
+![dashboard1](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
 
 1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 Key Findings:
@@ -183,6 +185,7 @@ On-time delivery fell by 0.3% YoY
 The high fulfilment KPI masked hidden inefficiencies
 
 2️⃣ Delayed Delivery Cost Impact & Supplier Breakdown
+![dashboard2()]
 Key Findings:
 
 Total delayed delivery cost: £1.73M
@@ -199,7 +202,7 @@ Immediate supplier performance intervention required
 
 3️⃣ Wastage Cost & Storage Compliance Analysis
 
-![Screenshot_dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?)
+![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?)
 
 Key Findings:
 
