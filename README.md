@@ -185,6 +185,7 @@ On-time delivery fell by 0.3% YoY
 The high fulfilment KPI masked hidden inefficiencies
 
 ## 📊 Dashboard 2 – Delayed delivery & Cost Impact
+![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashbaord2.png?raw=true)
 2️⃣ Delayed Delivery Cost Impact & Supplier Breakdown
 ![dashboard2()]
 Key Findings:
