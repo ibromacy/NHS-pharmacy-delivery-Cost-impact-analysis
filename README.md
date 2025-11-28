@@ -184,6 +184,7 @@ On-time delivery fell by 0.3% YoY
 
 The high fulfilment KPI masked hidden inefficiencies
 
+## 📊 Dashboard 2 – Delayed delivery & Cost Impact
 2️⃣ Delayed Delivery Cost Impact & Supplier Breakdown
 ![dashboard2()]
 Key Findings:
@@ -200,6 +201,7 @@ Responsible for 33.33% of all delayed deliveries
 
 Immediate supplier performance intervention required
 
+## 📊 Dashboard 3 – Medicine Storage Efficiency & Cost Imapact
 3️⃣ Wastage Cost & Storage Compliance Analysis
 
 ![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?)
@@ -224,6 +226,7 @@ NHS Supply Chain: £1.07M
 
 Storage practices are declining and driving multi-million-pound losses.
 
+## 📊 Dashboard 4 - Summary & Recommendations
 4️⃣ Summary & Recommendations Dashboard
 
 This page consolidates all insights into an executive summary.
@@ -244,7 +247,7 @@ Logistics congestion
 
 This pattern requires proactive pre-Q3 planning and risk mitigation.
 
-📝 Strategic Recommendations
+## 📝** Strategic Recommendations**
 1. Supplier SLA Re-Alignment
 
 Renegotiate with Healquick, UKPharma, and NHS Supply Chain
@@ -295,7 +298,7 @@ Implement predictive forecasting models
 
 Deploy temporary warehousing if needed
 
-🚀 What This Project Demonstrates
+## 🚀 **What This Project Demonstrates**
 
 This portfolio project showcases:
 
