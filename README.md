@@ -128,7 +128,6 @@ See `/Documentation/data_transformation.md` and `/Documentation/data_cleaning.md
 - Create parameterised queries for reusability  
 
 ### **SQL Checks Used**
-```sql
 SELECT supplier_name, COUNT(*) 
 FROM orders
 GROUP BY supplier_name;
@@ -144,7 +143,6 @@ VLOOKUP validation
 Pivot exploration
 
 Missing value comparisons
-```sql
 
 📐 DAX Measures Used
 See full list in /Documentation/dax_measures.md.
