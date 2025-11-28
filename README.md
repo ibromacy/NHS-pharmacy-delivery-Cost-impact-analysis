@@ -166,7 +166,7 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 
 📊 Dashboard Walkthrough
 ## 📊 Dashboard 1 – Fulfilment Overview
-<img width="1410" height="782" alt="Screenshot_dashboard4" src="https://github.com/user-attachments/assets/fe99a457-7781-4d70-821b-833b5967a53b" />
+![Image Alt](https://private-user-images.githubusercontent.com/153886163/519931049-5de86118-10a1-4400-bce2-d92b86491915.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQyOTY0MjQsIm5iZiI6MTc2NDI5NjEyNCwicGF0aCI6Ii8xNTM4ODYxNjMvNTE5OTMxMDQ5LTVkZTg2MTE4LTEwYTEtNDQwMC1iY2UyLWQ5MmI4NjQ5MTkxNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyOFQwMjE1MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzFkOTNiZjgzZWEzZThlYTExYTExZjhmNTQ5ZjYwMTE3OWIyZDRmZDQxZDkxMWU5ODgyZDZkYTQ5OTRhYTkxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.AG_PjposNCp_yHCP4AnYGtVL4E4iEOqe_nSPVdARIfc)
 
 1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 Key Findings:
