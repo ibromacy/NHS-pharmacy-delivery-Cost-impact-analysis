@@ -79,7 +79,8 @@ This dashboard was built to support:
 
 ## 🛠️ **Data Cleaning & Transformation (Details)**
 
-See `/Documentation/data_cleaning.md` and `/Documentation/data_transformation.md` for full steps, but summary:
+See `/Documentation/data_cleaning.md` and `/Documentation/data_transformation.md` [Documentation](documentation.md)
+ for full steps, but summary:
 ### **SQL Checks Used**
 SELECT supplier_name, COUNT(*) 
 FROM orders
