@@ -167,9 +167,9 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 
 📊 Dashboard Walkthrough
 ## 📊 Dashboard 1 – Fulfilment Overview
+1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 ![dashboard1](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
 
-1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 Key Findings:
 
 Overall fulfilment rate appears strong at 95.41%
@@ -185,9 +185,9 @@ On-time delivery fell by 0.3% YoY
 The high fulfilment KPI masked hidden inefficiencies
 
 ## 📊 Dashboard 2 – Delayed delivery & Cost Impact
-![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashbaord2.png?raw=true)
 2️⃣ Delayed Delivery Cost Impact & Supplier Breakdown
-![dashboard2()]
+![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashbaord2.png?raw=true)
+
 Key Findings:
 
 Total delayed delivery cost: £1.73M
@@ -228,8 +228,9 @@ NHS Supply Chain: £1.07M
 Storage practices are declining and driving multi-million-pound losses.
 
 ## 📊 Dashboard 4 - Summary & Recommendations
-![dashboard4](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard4.png?raw=true)
 4️⃣ Summary & Recommendations Dashboard
+![dashboard4](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard4.png?raw=true)
+
 
 This page consolidates all insights into an executive summary.
 
