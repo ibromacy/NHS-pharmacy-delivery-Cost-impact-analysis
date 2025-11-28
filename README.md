@@ -114,7 +114,7 @@ Missing value comparisons
 
 ### 📐**DAX Measures Used**
 
-See full list in [Data Measures Documentation](Documentation/dax_measures.md)
+See full list in [Dax Measures Documentation](Documentation/dax_measures.md)
 
 
 Key measures include:
