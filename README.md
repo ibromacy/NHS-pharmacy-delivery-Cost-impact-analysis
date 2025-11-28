@@ -3,6 +3,8 @@
 
 ---
 
+![Screenshot_dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?)
+
 ## 📌 **Project Description**
 
 This project presents an end-to-end **interactive Supply Chain & Logistics Analytics Dashboard** for NHS Pharma suppliers.  
@@ -200,8 +202,8 @@ Immediate supplier performance intervention required
 
 3️⃣ Wastage Cost & Storage Compliance Analysis
 
-![Screenshot_dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?raw=true)
-![dashboard 3](https://raw.githubusercontent.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/refs/heads/main/Screenshot_dashboard3.png)
+![Screenshot_dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?)
+
 Key Findings:
 
 Total wastage cost: £4.83M
