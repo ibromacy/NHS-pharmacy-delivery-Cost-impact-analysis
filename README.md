@@ -200,7 +200,7 @@ Immediate supplier performance intervention required
 
 3️⃣ Wastage Cost & Storage Compliance Analysis
 
-![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?raw=true)
+![Screenshot_dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?raw=true)
 Key Findings:
 
 Total wastage cost: £4.83M
