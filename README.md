@@ -166,7 +166,7 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 
 📊 Dashboard Walkthrough
 ## 📊 Dashboard 1 – Fulfilment Overview
-![Dashboard 1](Screenshots/dashboard1.png)
+<img width="1391" height="779" alt="Image" src="https://github.com/user-attachments/assets/f76bc0db-75d9-4022-8bc9-43cbff7cd78f" />
 
 1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 Key Findings:
