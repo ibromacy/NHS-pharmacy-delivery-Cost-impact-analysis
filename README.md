@@ -166,7 +166,7 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 
 📊 Dashboard Walkthrough
 ## 📊 Dashboard 1 – Fulfilment Overview
-![Dashboard 1](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
+![dashaboard1](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
 
 1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 Key Findings:
@@ -199,6 +199,8 @@ Responsible for 33.33% of all delayed deliveries
 Immediate supplier performance intervention required
 
 3️⃣ Wastage Cost & Storage Compliance Analysis
+
+![dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?raw=true)
 Key Findings:
 
 Total wastage cost: £4.83M
