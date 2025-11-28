@@ -79,11 +79,6 @@ This dashboard was built to support:
    - Built relationships and star-schema style modelling  
 
 
----
-
-Upload your files into these folders when building your GitHub repo.
-
----
 
 ## 📥 **Dataset & ETL Overview**
 
