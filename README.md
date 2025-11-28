@@ -166,7 +166,7 @@ Total Waste Cost = SUM(Orders[Wastage_Cost])
 
 📊 Dashboard Walkthrough
 ## 📊 Dashboard 1 – Fulfilment Overview
-![Image Alt](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
+![Dashboard 1](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashaboard1.png?raw=true)
 
 1️⃣ Fulfilment, On-Time Delivery & Storage Accuracy Overview
 Key Findings:
