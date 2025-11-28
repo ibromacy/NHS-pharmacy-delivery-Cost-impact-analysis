@@ -228,6 +228,7 @@ NHS Supply Chain: £1.07M
 Storage practices are declining and driving multi-million-pound losses.
 
 ## 📊 Dashboard 4 - Summary & Recommendations
+![dashboard4](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard4.png?raw=true)
 4️⃣ Summary & Recommendations Dashboard
 
 This page consolidates all insights into an executive summary.
