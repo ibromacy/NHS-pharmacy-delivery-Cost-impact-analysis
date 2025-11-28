@@ -3,7 +3,6 @@
 
 ---
 
-![Screenshot_dashboard3](https://github.com/ibromacy/NHS-pharmacy-delivery-Cost-impact-analysis/blob/main/Screenshot_dashboard3.png?)
 
 ## 📌 **Project Description**
 
@@ -145,7 +144,7 @@ VLOOKUP validation
 Pivot exploration
 
 Missing value comparisons
-
+```sql
 
 📐 DAX Measures Used
 See full list in /Documentation/dax_measures.md.
