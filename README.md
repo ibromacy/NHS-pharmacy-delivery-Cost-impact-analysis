@@ -247,7 +247,7 @@ Logistics congestion
 
 This pattern requires proactive pre-Q3 planning and risk mitigation.
 
-## 📝** Strategic Recommendations**
+## 📝 **Strategic Recommendations**
 1. Supplier SLA Re-Alignment
 
 Renegotiate with Healquick, UKPharma, and NHS Supply Chain
