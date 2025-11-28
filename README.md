@@ -57,12 +57,11 @@ This dashboard was built to support:
 
 ### **Data Sources**
 - CSV extracts from NHS pharma order systems  
-- Excel files for additional cleaning  
-- SQL used for exploratory analysis and validation  
+- SQL used for cleaning , exploratory analysis and validation  
 
 ### **ETL Process (End-to-End)**  
 1. **Extraction**  
-   - Imported CSV files into Power BI using Power Query  
+   - Imported CSV files into SQL schema for cleaning  
    - Validated raw data in SQL (NULL checks, duplicates, datatypes)
 
 2. **Transformation (SQL,Powerbi)**  
@@ -77,36 +76,6 @@ This dashboard was built to support:
 3. **Loading**  
    - Loaded the transformed tables into Power BI Model  
    - Built relationships and star-schema style modelling  
-
-
-
-## 📥 **Dataset & ETL Overview**
-
-### **Data Sources**
-- CSV extracts from NHS pharma order systems  
-- Excel files for additional cleaning  
-- SQL used for exploratory analysis and validation  
-
-### **ETL Process (End-to-End)**  
-1. **Extraction**  
-   - Imported CSV files into Power BI using Power Query  
-   - Validated raw data in SQL (NULL checks, duplicates, datatypes)
-
-2. **Transformation (Power Query)**  
-   - Removed duplicates  
-   - Standardised date formats  
-   - Fixed inconsistent supplier names  
-   - Created calculated columns (delivery status, storage accuracy)  
-   - Handled missing or invalid values  
-   - Ensured correct data types
-
-3. **Loading**  
-   - Loaded the transformed tables into Power BI Model  
-   - Built relationships and star-schema style modelling  
-
-This satisfies ETL/ELT requirements expected in professional analytics roles.
-
----
 
 ## 🛠️ **Data Cleaning & Transformation (Details)**
 
